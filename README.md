@@ -291,4 +291,15 @@ This can be a result from a poor sleep habit, that is preventing users for havin
 
 # Act
 
-Through the analysis performed 
+Through the analysis performed we can generate insights in order to answer the key questions for the business. Returning to them:
+
+* What are some of the trends in smart device usage?
+Considering the data that we were able to harvest through the FitBit usage, we can see that users tend to use the smart device to track activity level (including distance and calories burned), but less users keep the FitBit during sleep times, and fewer report their weight.
+During the exercise moments, users tend to stay more than 16h (991 minutes) in sedentary movement, having a low amount of time in active exercises.
+The amount of sleep and the distance the users provided are within what is expected for a healthy adult (5km 7h sleep on average), but even though, the data provided by those users show that their BMI are above the recommended range by WHO
+
+* How could these trends apply to Bellabeat customers? How could these trends help influence Bellabeat marketing strategy?
+Bellabeat could start promoting a healthier lifestyle, through different initiatives, like the importance of a balanced food ingestion, quality of sleep, importance of exercise throughout the week, and also taking the mental health into account
+A great way to make people more invested into those would be through the gamification of usage of the FitBit, encouraging users to maintain the FitBit during the whole day, to have better data about exercises, sleep, resting periods, etc. All of that, through games, achievements and building a community around the smart device and app
+Bellabeat could also seek to improve their smart device data gathering, being able to harvest more information from users, and allowing them, through the app, to ingest food consumption (amount, times per day, etc), amount of exercises made during a week, type of exercise, etc.
+A great marketing would also be partnering with sport influencers, to divulge the product and app, bring specialists about exercise, nutrition and healthy habits to create videos.
