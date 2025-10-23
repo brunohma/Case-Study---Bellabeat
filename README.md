@@ -171,7 +171,8 @@ daily_sleep <- daily_sleep %>%
   mutate(Date = mdy(Date))
 ```
 
-Analyze
+# Analyze
+
 In order to have a better perspective about the data in question, an excellent way is using the summary() function, to have a resume of the data available in the desired columns available in the dataset
 
 ```r
@@ -221,6 +222,10 @@ We can also validate that users have at least one sleep record for day, having a
 There is an average of 72,04kg for the users, with a BMI of 25,19. Since we don't have other types of information like age, height or other habits that each user may have, we can't take deeper conclusions regarding the weight itself
 On the other hand, comparing the BMI obtained with the recommended value by the World Health Organization, we can see that the users which shared their data aren't in best condition, since an average adult must have a BMI of 18,5 to 24,9 according with WHO
 
+# Share
+
+* **Usage across weekdays** 
+
 ```r
 # Grouping inputs by weekday in order to check days where FitBit was used
 daily_activity_counts <- daily_activity %>%
@@ -252,7 +257,9 @@ ggplot(daily_activity_counts, aes(x = Weekday, y = TotalInputs, fill = Weekday))
 ```
 ![Usage across weekdays](assets/Usage_across_weekdays.png)
 
-* Correlation between total steps and calories
+We can validate through this chart that users have a higher usage of the FitBit from Tuesday to Thursday, the middle of the week, compared to other days. This can be explored by the fact that in the beginning of the week, people are getting "acclimated" with their tasks and duties from the specific week, not having too many free time to focus on exercises. And in the other hand, by the end of the week, people are usually tired from the routine, and tend to relax more.
+
+* **Correlation between total steps and calories**
 
 ```r
 #Determining the correlation between total steps and calories 
@@ -264,7 +271,10 @@ ggplot(data= daily_activity, aes(x=TotalSteps, y=Calories)) +
 ```
 ![Correlation between steps and calories](assets/Relationship_between_steps_and_calories.png)
 
-* Correlation between sleep time and time in bed
+Through the scatterplot, we can see a positive correlation between the amount of steps taken and the amount of calories spent.
+
+
+* **Correlation between sleep time and time in bed**
 
 ```r
 #Determining the correlation between amount of time in bed vs sleep time
@@ -275,4 +285,10 @@ ggplot(data= daily_sleep, aes(x= TotalMinutesAsleep, y=TotalTimeInBed)) +
 ```
 ![Correlation between sleep time and time spent in bed](assets/Sleep_time_and_Time_in_Bed.png)
 
+In this graph, we can validate another positive correlation, between sleep time and time spen in bed. Considering that there were, in average, 30 minutes of extra time in bed, without being sleep, we can infer that the users do not have a well-rounded quality of sleep and weren't resting enough.
+This can be a result from a poor sleep habit, that is preventing users for having a good rest during their sleep, and consequently spending more time in bed instead of getting out of bed when they wake up.
 
+
+# Act
+
+Through the analysis performed 
